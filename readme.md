@@ -2,7 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/react-leetcode-calendar.svg)](https://www.npmjs.com/package/react-leetcode-calendar)
 [![GitHub stars](https://img.shields.io/github/stars/saurabhhh777/react-leetcode-calendar)](https://github.com/saurabhhh777/react-leetcode-calendar/stargazers)
-[![License](https://img.shields.io/github/license/saurabhhh777/react-leetcode-calendar)](LICENSE)
+[![License](https://img.shields.io/github/license/saurabhhh777/react-leetcode-calendar)](https://github.com/saurabhhh777/react-leetcode-calendar/blob/main/LICENSE)
+
 
 Easily display a **LeetCode submission calendar** in your React projects! 🚀  
 This library provides a **GitHub-like activity graph** for LeetCode submissions.  
@@ -83,8 +84,14 @@ export default App;
 ## 🔗 Links
 
 - [Github Repo](https://github.com/saurabhhh777/react-leetcode-calendar.git)
-- [NPM Package:](https://www.npmjs.com/package/react-leetcode-calendar)
+- [NPM Package](https://www.npmjs.com/package/react-leetcode-calendar)
 
 
 ## 📜 License
-This project is licensed under the [MIT License](https://img.shields.io/github/license/saurabhhh777/react-leetcode-calendar).
+This project is licensed under the [MIT License](https://github.com/saurabhhh777/react-leetcode-calendar/blob/main/LICENSE).
+
+
+⭐ Star this repo if you found it useful! 🚀
+📢 Contributions & Issues are welcome!
+
+
