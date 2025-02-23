@@ -1,0 +1,56 @@
+{
+  "name": "react-leetcode-calendar",
+  "version": "2.2.0",
+  "description": "A React component to display LeetCode submissions",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "axios": "^1.7.9",
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-activity-calendar": "^2.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saurabhhh777/react-leetcode-calendar.git"
+  },
+  "keywords": [
+    "react",
+    "leetcode",
+    "calendar",
+    "activity"
+  ],
+  "author": "Saurabh",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@testing-library/react": "^16.2.0",
+    "@types/axios": "^0.9.36",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^29.7.0",
+    "rollup": "^4.34.8",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "ts-jest": "^29.2.6",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}
