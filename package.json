@@ -28,9 +28,12 @@
     "react",
     "leetcode",
     "calendar",
-    "activity"
+    "leetcode submissions",
+    "leetcode stats",
+    "leetcode activity",
+    "leetcode streak"
   ],
-  "author": "Saurabh",
+  "author": "Saurabhhh777",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",

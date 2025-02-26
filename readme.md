@@ -35,19 +35,57 @@ yarn add react-leetcode-calendar
 ## 🚀 Usage
 Simply import and use the component:
 
+1. when you pass username and graph as props
 
 ```
 import { Leetcodecalendar } from "react-leetcode-calendar";
 
 const App = () => {
   return (
+    <div style={{ background: "#101828", color: "white", display: "flex", justifyContent: "center" }}>
+
+
       <Leetcodecalendar username={"saurabhhh777"} graph={"yearly"} />
+
+    </div>
+  );
+};
+
+export default App;
+
+```
+
+- 👇 Example
+
+![Image](https://github.com/user-attachments/assets/5c27e98f-548a-4242-a9ba-dcba2fea30ac)
+
+---
+
+2.  when you only pass username as props
+
+
+```
+import { Leetcodecalendar } from "react-leetcode-calendar";
+
+const App = () => {
+  return (
+    <div style={{ background: "#101828", color: "white", display: "flex", justifyContent: "center" }}>
+
+
+      <Leetcodecalendar username={"saurabhhh777"}  />
+
+    </div>
   );
 };
 
 export default App;
 ```
 
+- 👇 Example
+
+![Image](https://github.com/user-attachments/assets/0adf09d2-0db1-4655-977d-9e657a829aaa)
+
+ 
 
 ## 🎯 Props
 <table>
