@@ -1,16 +1,19 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", // Enables JSX processing
+    "jsx": "react-jsx",
     "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "node",
+    "target": "ES2022",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true, // Fixes React import issue
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
   "include": ["src"],
-  "importHelpers": true,
-  "skipLibCheck": true
+  "exclude": ["node_modules", "dist"]
 }
