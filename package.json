@@ -6,6 +6,7 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "homepage": "https://react-leetcode-calendar-docs.vercel.app/?path=/docs/react-leetcode-calendar-leetcodecalendar--docs",
   "files": [
     "dist"
   ],
