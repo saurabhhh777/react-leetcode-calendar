@@ -312,7 +312,7 @@ const UI_THEMES = {
         noData: "#173C4C" // Dark teal-blue
     }
 };
-const LeetcodecalendarComponent = ({ username, graph = "default", showTitle = true, size = "medium", startDate, ui = "default", colors, labels }) => {
+const LeetcodecalendarComponent = ({ username, graph = "default", showTitle = false, size = "medium", startDate, ui = "default", colors, labels }) => {
     react.useEffect(() => {
         console.log("Graph prop received:", graph);
     }, [graph]);
@@ -354,22 +354,29 @@ const LeetcodecalendarComponent = ({ username, graph = "default", showTitle = tr
                 }
                 else {
                     console.warn("Invalid startDate provided to Leetcodecalendar. Expected YYYY-MM-DD. Falling back to last year from today.", startDate);
-                    const lastYear = new Date(today.setFullYear(today.getFullYear() - 1));
+                    // Default: last year from today
+                    const lastYear = new Date(today);
+                    lastYear.setFullYear(lastYear.getFullYear() - 1);
                     startDateStr = lastYear.toISOString().split("T")[0];
-                    endDateStr = new Date(lastYear.setFullYear(lastYear.getFullYear() + 1) - 1)
-                        .toISOString()
-                        .split("T")[0];
+                    const endYear = new Date(lastYear);
+                    endYear.setFullYear(endYear.getFullYear() + 1);
+                    endYear.setDate(endYear.getDate() - 1);
+                    endDateStr = endYear.toISOString().split("T")[0];
                 }
             }
             else {
                 // Default: last year from today
-                const lastYear = new Date(today.setFullYear(today.getFullYear() - 1));
+                const lastYear = new Date(today);
+                lastYear.setFullYear(lastYear.getFullYear() - 1);
                 startDateStr = lastYear.toISOString().split("T")[0];
-                endDateStr = new Date(lastYear.setFullYear(lastYear.getFullYear() + 1) - 1)
-                    .toISOString()
-                    .split("T")[0];
+                const endYear = new Date(lastYear);
+                endYear.setFullYear(endYear.getFullYear() + 1);
+                endYear.setDate(endYear.getDate() - 1);
+                endDateStr = endYear.toISOString().split("T")[0];
             }
+            console.log('Yearly date range:', { startDateStr, endDateStr, dataLength: data.length });
             const initialYearData = generateInitialYearData(startDateStr, endDateStr);
+            console.log('Generated year data length:', initialYearData.length);
             return initialYearData.map((item) => {
                 const matchingApiData = data.find((apiData) => apiData.date === item.date);
                 return matchingApiData
